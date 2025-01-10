@@ -5,14 +5,14 @@ export default async (): Promise<Config> => {
     verbose: true,
     preset: 'jest-preset-angular',
     testEnvironment: 'jsdom',
-    setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
     transform: {
-      '^.+\\.ts$': 'ts-jest',
+      '^.+\\.ts$': ['ts-jest', { isolatedModules: true }],
     },
-    transformIgnorePatterns: ['/node_modules/(?!flat)/'],
-    moduleDirectories: ['node_modules', 'src'],
     fakeTimers: {
       enableGlobally: true,
     },
+    setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
+    transformIgnorePatterns: ['/node_modules/(?!flat)/'],
+    moduleDirectories: ['node_modules', 'src'],
   };
 };

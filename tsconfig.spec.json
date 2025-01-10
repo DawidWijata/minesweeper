@@ -4,8 +4,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
-    "types": ["jest", "bun"]
+    "types": ["jest"]
   },
   "include": ["src/**/*.spec.ts", "src/**/*.d.ts"],
-  "files": ["src/setup-jest.ts", "src/setup-bun.ts"]
+  "files": ["src/setup-jest.ts"]
 }

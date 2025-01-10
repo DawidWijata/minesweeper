@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "jest"
+    "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand"
   },
   "private": true,
   "dependencies": {
