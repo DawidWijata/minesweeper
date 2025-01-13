@@ -1,0 +1,13 @@
+<menu>
+  <h1>Minesweeper</h1>
+
+  <ul>
+    @for (item of items$ | async; track $index) {
+    <li>
+      <a [href]="item.path">
+        {{ item.name }}
+      </a>
+    </li>
+    }
+  </ul>
+</menu>

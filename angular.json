@@ -56,6 +56,17 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "mock": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.mock.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -67,7 +78,12 @@
               "buildTarget": "minesweeper:build:production"
             },
             "development": {
-              "buildTarget": "minesweeper:build:development"
+              "buildTarget": "minesweeper:build:development",
+              "port": 4200
+            },
+            "mock": {
+              "buildTarget": "minesweeper:build:mock",
+              "port": 4201
             }
           },
           "defaultConfiguration": "development"

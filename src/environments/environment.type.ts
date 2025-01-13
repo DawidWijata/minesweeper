@@ -3,6 +3,7 @@ export type EnvironmentConfig = {
 };
 
 export enum Environment {
-  Development,
-  Production,
+  Development = 'development',
+  Production = 'production',
+  Mock = 'mock',
 }
