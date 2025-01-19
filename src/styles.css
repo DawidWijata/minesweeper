@@ -1,6 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #c5c3c3;
+
+  --primary-background-color: #191c1e;
+  --secondary-background-color: #1e2124;
+
+  --green: #8bde7d;
+  --green-overlay: #8cde7d49;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--text-primary-color);
+  font-family: "Jost", sans-serif;
+}
+
+label {
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 1;
+}
+
+[hidden] {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2048px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 4098px) {
+  html {
+    font-size: 48px;
+  }
 }

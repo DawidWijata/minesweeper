@@ -4,7 +4,7 @@
   <ul>
     @for (item of items$ | async; track $index) {
     <li>
-      <a [href]="item.path">
+      <a [href]="item.path" class="button">
         {{ item.name }}
       </a>
     </li>

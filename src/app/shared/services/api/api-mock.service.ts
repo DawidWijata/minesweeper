@@ -7,8 +7,8 @@ import { Observable, of } from 'rxjs';
 export class ApiMockService implements ApiBaseService {
   getMainMenu(): Observable<MenuItem[]> {
     return of([
-      { name: 'Offline', path: 'game-panel' },
-      { name: 'Online', path: 'game-panel' },
+      { name: 'Single player', path: 'game-panel' },
+      { name: 'Multi player', path: 'game-panel' },
       { name: 'Scoreboard', path: 'scoreboard' },
       { name: 'Settings', path: 'settings' },
     ]);
